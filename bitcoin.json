@@ -1,0 +1,55 @@
+{
+ "nota": "Il sigillo delle fotografie nella blockchain di Bitcoin, con OpenTimestamps (sigillo_bitcoin.py). Ogni prova collega l'impronta della fotografia, quella del registro delle firme, a un blocco di Bitcoin.",
+ "aggiornato_il": "2026-10-14",
+ "fotografie": [
+  {
+   "fotografia": "2026-09-21",
+   "impronta": "sha256:1debeebe4f19e369f02840368a6b81e0e3d29be84a910e5c5fae6637571dbfb1",
+   "prova": "firme_bitcoin/2026-09-21.json.ots",
+   "inviata_il": "2026-10-14",
+   "stato": "in_attesa"
+  },
+  {
+   "fotografia": "2026-09-22",
+   "impronta": "sha256:5707df13bb20d910414589001dcd44a8120cbf3f9ec9d5b610d812ebbec835eb",
+   "prova": "firme_bitcoin/2026-09-22.json.ots",
+   "inviata_il": "2026-10-14",
+   "stato": "in_attesa"
+  },
+  {
+   "fotografia": "2026-09-28",
+   "impronta": "sha256:e30017589668d1c5e7a0a6a1e8df5f0fe7a42e4d5c75cf5851848d9347407688",
+   "prova": "firme_bitcoin/2026-09-28.json.ots",
+   "inviata_il": "2026-10-14",
+   "stato": "in_attesa"
+  },
+  {
+   "fotografia": "2026-10-01",
+   "impronta": "sha256:5a6bb8f466c3b9a3d8472b00d5e706eef69d3657c11cbd119922af6756b4fda8",
+   "prova": "firme_bitcoin/2026-10-01.json.ots",
+   "inviata_il": "2026-10-14",
+   "stato": "in_attesa"
+  },
+  {
+   "fotografia": "2026-10-02",
+   "impronta": "sha256:0b172cf242bdd7be63771751e8ce56cd76d13ea52db983567f4d59bcba61157d",
+   "prova": "firme_bitcoin/2026-10-02.json.ots",
+   "inviata_il": "2026-10-14",
+   "stato": "in_attesa"
+  },
+  {
+   "fotografia": "2026-10-05",
+   "impronta": "sha256:6e56f67caacf17d38ee941cab2c92c3de9a8e4cdd823c2d8b90504072dc5e3a5",
+   "prova": "firme_bitcoin/2026-10-05.json.ots",
+   "inviata_il": "2026-10-14",
+   "stato": "in_attesa"
+  },
+  {
+   "fotografia": "2026-10-12",
+   "impronta": "sha256:ae3108c46e4afbfe996659826abfe99cf73b6193a3c19651c72be40b0eb99161",
+   "prova": "firme_bitcoin/2026-10-12.json.ots",
+   "inviata_il": "2026-10-14",
+   "stato": "in_attesa"
+  }
+ ]
+}
