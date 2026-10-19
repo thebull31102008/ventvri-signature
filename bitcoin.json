@@ -112,7 +112,15 @@
    "impronta": "sha256:e0019918a1b45f085eb7405b7075154b010e65d0958d5acf93f62d907ed71ee6",
    "prova": "firme_bitcoin/2026-10-19.json.ots",
    "inviata_il": "2026-10-19",
-   "stato": "in_attesa"
+   "stato": "sigillata",
+   "blocco": 972141,
+   "hash_blocco": "000000000000000000019aa7ba5616cabb7a7c088c6c11d54d6b96be30c2b6b5",
+   "ora_blocco": "2026-10-19T12:21:16Z",
+   "controllata_con": [
+    "mempool.space",
+    "blockstream.info"
+   ],
+   "controllata_il": "2026-10-19"
   }
  ]
 }
