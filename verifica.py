@@ -11,6 +11,12 @@ L'impronta e' lo SHA-256 dei byte del file, con gli a capo nella forma di Unix (
 Ogni riga del registro porta anche l'impronta della riga prima (campo «precedente»):
 una riga tolta, aggiunta in mezzo o cambiata rompe la catena.
 
+Dal 16.11.2026 nello stesso registro entrano anche i file delle CATENE: ragionamenti
+(un urto, un collo di bottiglia, un prezzo) che finiscono in una previsione su un prezzo
+di borsa, con una probabilita' detta prima. Le loro righe hanno «documento» (per esempio
+«catene-2026-11-15») al posto di «fotografia», e anche per loro l'impronta non dice niente
+del contenuto.
+
 Uso:  python verifica.py                       controlla la catena del registro
       python verifica.py FOTOGRAFIA.json ...   cerca nel registro l'impronta di ogni file
       python verifica.py --registro PERCORSO   un altro registro (per esempio una copia)
@@ -38,6 +44,18 @@ def riga(voce):
 
 def impronta_riga(testo):
     return "sha256:" + hashlib.sha256(testo.encode("utf-8")).hexdigest()
+
+
+def nome(voce):
+    """il nome di un documento firmato: la data per una fotografia, «catene-...» per le catene"""
+    return voce.get("fotografia") or voce.get("documento")
+
+
+def descrivi(voce):
+    """come si dice un documento firmato, in una frase"""
+    if voce.get("fotografia"):
+        return f"la fotografia del {voce['fotografia']}"
+    return f"il file di catene {voce.get('documento')}"
 
 
 def leggi(percorso):
@@ -84,17 +102,18 @@ def main(argv):
     voci = [json.loads(r) for r in righe if r.startswith("{")]
     if not problemi:
         ultima = voci[-1]
-        print(f"catena intatta: {len(voci)} fotografie firmate, l'ultima del {ultima.get('fotografia')}, "
-              f"firmata il {ultima.get('firmata_il')}")
+        foto = sum(1 for v in voci if v.get("fotografia"))
+        print(f"catena intatta: {len(voci)} documenti firmati ({foto} fotografie, {len(voci) - foto} file di catene); "
+              f"l'ultimo: {descrivi(ultima)}, firma del {ultima.get('firmata_il')}")
     per_impronta = {v.get("impronta"): v for v in voci}
     esito = 1 if problemi else 0
     for f in argv:
         imp, n = impronta_file(f)
         v = per_impronta.get(imp)
         if v:
-            print(f"  ✔ {f}: e' la fotografia del {v.get('fotografia')}, firmata il {v.get('firmata_il')} (riga {v.get('n')})")
+            print(f"  ✔ {f}: {descrivi(v)}, firma del {v.get('firmata_il')} (riga {v.get('n')})")
         else:
-            print(f"  ✘ {f}: la sua impronta ({imp}) non e' nel registro: il file e' diverso da ogni fotografia firmata")
+            print(f"  ✘ {f}: la sua impronta ({imp}) non e' nel registro: il file e' diverso da ogni documento firmato")
             esito = 1
     return esito
 
