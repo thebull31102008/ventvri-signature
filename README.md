@@ -4,7 +4,7 @@ VENTVRI è un osservatorio delle tecnologie che arrivano. Segue alcune centinaia
 
 Ogni lunedì un programma automatico scatta una **fotografia** delle previsioni: un file con la probabilità che ogni tecnologia salga il prossimo gradino entro la fine di quest'anno, del prossimo e di quello dopo. Le previsioni si giudicano dopo, con le regole scritte prima di vedere un solo esito: un anno si giudica in via provvisoria il 1° gennaio e in via definitiva il 1° aprile dell'anno dopo.
 
-Dal 16 novembre 2026 nello stesso registro entrano anche le **catene**. Una catena è un ragionamento sul mondo: un urto (il clima, una guerra, un divieto), un collo di bottiglia, un prezzo. Finisce sempre in una previsione verificabile, del tipo «il prezzo X tocca almeno +N% entro il giorno D», con una probabilità detta prima. Il programma le sigilla in un file il giorno in cui nascono, e il lunedì dopo l'impronta del file entra qui, insieme alla fotografia.
+Dal 15 novembre 2026 nello stesso registro entrano anche le **catene**. Una catena è un ragionamento sul mondo: un urto (il clima, una guerra, un divieto), un collo di bottiglia, un prezzo. Finisce sempre in una previsione verificabile, del tipo «il prezzo X tocca almeno +N% entro il giorno D», con una probabilità detta prima. Il programma le sigilla in un file il giorno in cui nascono, e il lunedì dopo l'impronta del file entra qui, insieme alla fotografia.
 
 Un giudizio così vale solo se le previsioni non sono state ritoccate dopo. Questo repository serve a provarlo.
 

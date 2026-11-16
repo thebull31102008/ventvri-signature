@@ -1,6 +1,6 @@
 {
- "nota": "Il sigillo delle fotografie nella blockchain di Bitcoin, con OpenTimestamps (sigillo_bitcoin.py). Ogni prova collega l'impronta della fotografia, quella del registro delle firme, a un blocco di Bitcoin. Dal 16.11.2026 anche i file delle catene: le loro voci hanno «documento» al posto di «fotografia».",
- "aggiornato_il": "2026-11-15",
+ "nota": "Il sigillo delle fotografie nella blockchain di Bitcoin, con OpenTimestamps (sigillo_bitcoin.py). Ogni prova collega l'impronta della fotografia, quella del registro delle firme, a un blocco di Bitcoin. Dal 15.11.2026 anche i file delle catene: le loro voci hanno «documento» al posto di «fotografia».",
+ "aggiornato_il": "2026-11-16",
  "fotografie": [
   {
    "fotografia": "2026-09-21",
@@ -168,20 +168,43 @@
    "controllata_il": "2026-11-10"
   },
   {
+   "fotografia": "2026-11-16",
+   "impronta": "sha256:535f9f1aa6c4eb2414fd508930e2e0c4fdbb53aab69f98db42536286fceca18a",
+   "prova": "firme_bitcoin/2026-11-16.json.ots",
+   "inviata_il": "2026-11-16",
+   "stato": "in_attesa"
+  },
+  {
    "documento": "catene-2026-11-15",
    "impronta": "sha256:a65502129e0bc5dbe6b04309226ea2b26e57e303b7d853b4de3d6b5fcaa9911c",
    "prova": "firme_bitcoin/catene-2026-11-15.json.ots",
    "inviata_il": "2026-11-15",
-   "stato": "in_attesa",
-   "tipo": "catene"
+   "stato": "sigillata",
+   "tipo": "catene",
+   "blocco": 975963,
+   "hash_blocco": "0000000000000000000104eb3da8618ea851b1c6cd24eae259c24594a78c0010",
+   "ora_blocco": "2026-11-15T12:47:02Z",
+   "controllata_con": [
+    "mempool.space",
+    "blockstream.info"
+   ],
+   "controllata_il": "2026-11-16"
   },
   {
    "documento": "catene-2026-11-15_2",
    "impronta": "sha256:d13567068b5164efaca40d6866d7e02432c19ed3bf15f559f5f3670c80829a94",
    "prova": "firme_bitcoin/catene-2026-11-15_2.json.ots",
    "inviata_il": "2026-11-15",
-   "stato": "in_attesa",
-   "tipo": "catene"
+   "stato": "sigillata",
+   "tipo": "catene",
+   "blocco": 975963,
+   "hash_blocco": "0000000000000000000104eb3da8618ea851b1c6cd24eae259c24594a78c0010",
+   "ora_blocco": "2026-11-15T12:47:02Z",
+   "controllata_con": [
+    "mempool.space",
+    "blockstream.info"
+   ],
+   "controllata_il": "2026-11-16"
   }
  ]
 }

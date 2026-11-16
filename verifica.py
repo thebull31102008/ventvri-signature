@@ -11,7 +11,7 @@ L'impronta e' lo SHA-256 dei byte del file, con gli a capo nella forma di Unix (
 Ogni riga del registro porta anche l'impronta della riga prima (campo «precedente»):
 una riga tolta, aggiunta in mezzo o cambiata rompe la catena.
 
-Dal 16.11.2026 nello stesso registro entrano anche i file delle CATENE: ragionamenti
+Dal 15.11.2026 nello stesso registro entrano anche i file delle CATENE: ragionamenti
 (un urto, un collo di bottiglia, un prezzo) che finiscono in una previsione su un prezzo
 di borsa, con una probabilita' detta prima. Le loro righe hanno «documento» (per esempio
 «catene-2026-11-15») al posto di «fotografia», e anche per loro l'impronta non dice niente
