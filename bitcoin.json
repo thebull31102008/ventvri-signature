@@ -1,6 +1,6 @@
 {
  "nota": "Il sigillo delle fotografie nella blockchain di Bitcoin, con OpenTimestamps (sigillo_bitcoin.py). Ogni prova collega l'impronta della fotografia, quella del registro delle firme, a un blocco di Bitcoin. Dal 15.11.2026 anche i file delle catene: le loro voci hanno «documento» al posto di «fotografia».",
- "aggiornato_il": "2026-11-16",
+ "aggiornato_il": "2026-11-17",
  "fotografie": [
   {
    "fotografia": "2026-09-21",
@@ -172,7 +172,15 @@
    "impronta": "sha256:535f9f1aa6c4eb2414fd508930e2e0c4fdbb53aab69f98db42536286fceca18a",
    "prova": "firme_bitcoin/2026-11-16.json.ots",
    "inviata_il": "2026-11-16",
-   "stato": "in_attesa"
+   "stato": "sigillata",
+   "blocco": 976145,
+   "hash_blocco": "000000000000000000003ca563b24fe19717727bf70db0928a33acfe621a5e49",
+   "ora_blocco": "2026-11-16T15:32:02Z",
+   "controllata_con": [
+    "mempool.space",
+    "blockstream.info"
+   ],
+   "controllata_il": "2026-11-17"
   },
   {
    "documento": "catene-2026-11-15",
