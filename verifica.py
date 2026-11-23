@@ -47,7 +47,8 @@ def impronta_riga(testo):
 
 
 def nome(voce):
-    """il nome di un documento firmato: la data per una fotografia, «catene-...» per le catene"""
+    """il nome di un documento firmato: la data per una fotografia, «catene-...» per le catene,
+    «scenari-...» per gli scenari"""
     return voce.get("fotografia") or voce.get("documento")
 
 
@@ -55,6 +56,8 @@ def descrivi(voce):
     """come si dice un documento firmato, in una frase"""
     if voce.get("fotografia"):
         return f"la fotografia del {voce['fotografia']}"
+    if str(voce.get("documento") or "").startswith("scenari-"):
+        return f"il file di scenari {voce.get('documento')}"
     return f"il file di catene {voce.get('documento')}"
 
 

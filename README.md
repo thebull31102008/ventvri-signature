@@ -6,6 +6,8 @@ Ogni lunedì un programma automatico scatta una **fotografia** delle previsioni:
 
 Dal 15 novembre 2026 nello stesso registro entrano anche le **catene**. Una catena è un ragionamento sul mondo: un urto (il clima, una guerra, un divieto), un collo di bottiglia, un prezzo. Finisce sempre in una previsione verificabile, del tipo «il prezzo X tocca almeno +N% entro il giorno D», con una probabilità detta prima. Il programma le sigilla in un file il giorno in cui nascono, e il lunedì dopo l'impronta del file entra qui, insieme alla fotografia.
 
+Dal 22 novembre 2026 entrano anche gli **scenari**: per un filone, le incertezze che decidono i mesi successivi, ognuna con i suoi rami e le loro probabilità, e le domande datate su eventi vicini. Il programma ne sigilla lo stato una volta alla settimana, e alla chiusura ogni probabilità si vota con il punteggio di Brier.
+
 Un giudizio così vale solo se le previsioni non sono state ritoccate dopo. Questo repository serve a provarlo.
 
 ## Cosa c'è qui
@@ -63,6 +65,7 @@ Senza programmi: l'impronta è lo SHA-256 dei byte del file, con gli a capo nell
 | `traguardi`, `porte` | quante tecnologie e quanti colli di bottiglia contiene |
 | `documento`, `tipo` | per i file di catene, al posto di `fotografia`: il nome (`catene-AAAA-MM-GG`) e il tipo (`catene`) |
 | `sigillate_il`, `catene` | per i file di catene: il giorno del sigillo e quante catene contiene |
+| `sigillati_il`, `incertezze`, `domande` | per i file di scenari (`scenari-AAAA-MM-GG`, tipo `scenari`): il giorno del sigillo, quante incertezze e quante domande datate contiene |
 
 L'impronta di una riga è lo SHA-256 del suo testo esatto (UTF-8, chiavi in ordine alfabetico, nessuno spazio).
 
